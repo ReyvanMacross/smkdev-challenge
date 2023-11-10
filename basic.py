@@ -4,12 +4,12 @@ def hitungCaraPenempatanKuda(n):
     return (n * n * (n * n - 1) / 2) 
 
 try:
-    n = int(input("Masukkan nilai n (1-100): "))
+    n = int(input("Masukkan nilai n : "))
     if 1 <= n <= 100:
         for k in range(1, n + 1):
             cara = hitungCaraPenempatanKuda(k)
             print(cara)
     else:
-        print("Nilai n harus berada di antara 1 hingga 100.")
+        print("Nilai n hanya bisa di antara 1 hingga 100.")
 except ValueError:
-    print("Masukan harus berupa angka.")
+    print("Input berupa type angka.")
